@@ -18,11 +18,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "HorizonFintexSDK",
-            dependencies: []),
-        .testTarget(
-            name: "HorizonFintexSDKTests",
-            dependencies: ["HorizonFintexSDK"]),
+//        .target(name: "HorizonFintexSDK"),
+        .binaryTarget(name: "HorizonFintexSDK", url: "https://horizonfintex.jfrog.io/artifactory/horizonsdk-cocoapods-local/HorizonFintexSDK/1.0.0/HorizonFintexSDK.zip", checksum: "dcc93fa0f47ba70de203b2fd6cd8546638699c2fe0ae5da1c893ecce5015c19e"),
     ]
 )
